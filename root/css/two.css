@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900');
 
 *,
 *::before,
@@ -11,6 +12,9 @@
 :root {
     --bd-bg: #222121;
     --f-c: #ffc30b;
+    --hour-c: #ffc30b;
+    --min-c: grey;
+    --sec-c: red;
     --wr-bg: #161616;
 }
 
@@ -41,13 +45,83 @@ h1 a:hover {
 /* ---------------------- */
 
 .wrapper {
-    position: absolute;
+    position: fixed;
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 95%;
     height: 90vh;
     background: var(--wr-bg);
     border: 1px solid var(--f-c);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900');
+
+.clock-face {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    border: 20px solid var(--f-c);
+
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: var(--f-c);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand-hour {
+
+    height: 16px;
+    background: var(--hour-c);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+}
+
+.hand-min {
+    height: 12px;
+    background: var(--min-c);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+}
+
+.hand-second {
+
+    height: 3px;
+    background: var(--sec-c);
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+}
+
+
+
+.digit-nums {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 20%;
+    background: #000;
+    z-index: 99;
+    padding: 50px;
+    text-align: center;
+    line-height: 20%;
+    color: var(--f-c);
+    font-size: 2em;
+    font-family: 'Orbitron';
 }
