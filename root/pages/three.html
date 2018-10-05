@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CSS VARS FORM JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/three.css" />
+
+</head>
+
+<body>
+  <h1>
+    <a href="https://www.youtube.com/watch?v=AHLNzv13c2I&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=3" target="_blank">CSS VARS FROM
+      <span class="h1">JS</span>
+    </a>
+  </h1>
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base color:</label>
+    <input type="color" name="color" id="color" value="#ffc600">
+  </div>
+  <div class="container">
+    <img src="../assets/img/varsFish.jpg" alt="image">
+  </div>
+  <button class="btn">klik</button>
+  <button class="clear" id="clr">clear</button>
+
+  <!-- SCRIPTS -->
+  <script src="../scripts/03.js"></script>
+</body>
+
+</html>
