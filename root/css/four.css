@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Muli:200,300,400');
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bd-bg: #363636;
+  --hero-c: #ffc30b;
+  --h2-c: rgb(191, 0, 0);
+}
+
+body {
+  background: var(--bd-bg);
+  font-family: 'Lato';
+}
+
+h1 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--hero-c);
+  font-size: 1.2em;
+  transition: .2s;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+h1 a:hover {
+  color: red;
+}
+
+h2 {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--h2-c);
+  font-size: 4em;
+}
