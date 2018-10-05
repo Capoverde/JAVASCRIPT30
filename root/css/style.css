@@ -1,41 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
 
-*, *::before, *::after
-{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-:root
-{
+:root {
     --bd-bg: #363636;
     --h1-c: #ffc30b;
     --h1-c-hov: tomato;
+    --cont-c: #ddd;
+    --cont-bg: #262626;
+    --key-bg: #464646;
+    --key-bd: #ebb616;
 }
 
-body
-{
+body {
     background: var(--bd-bg);
+    font-family: 'Muli';
 }
 
-h1
-{
+h1 {
     position: absolute;
     top: 20%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-h1 a 
-{
+h1 a {
     text-decoration: none;
     color: var(--h1-c);
     font-family: 'Muli';
-    text-shadow: 2px 2px rgba(0,0,0,.5);
+    text-shadow: 2px 2px rgba(0, 0, 0, .5);
 }
 
-h1 a:hover
-{
+h1 a:hover {
     color: var(--h1-c-hov);
+}
+
+/* --------------------------------------------------------------------------- */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 30vh;
+    padding: 20px;
+    background: var(--cont-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.key {
+    color: var(--cont-c);
+    font-weight: 600;
+    width: 10%;
+    height: 20%;
+    text-align: center;
+    padding: 5px;
+    background: var(--key-bg);
+    margin: 5px;
+    border: 2px solid var(--key-bd);
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.75);
+}
+
+span {
+    color: var(--h1-c);
 }
