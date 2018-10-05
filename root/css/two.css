@@ -58,7 +58,7 @@ h1 a:hover {
     border: 1px solid var(--f-c);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900');
+
 
 .clock-face {
     position: relative;
